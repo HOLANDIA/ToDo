@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Fjalla One", sans-serif;
+}
+
+body {
+  background: white;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: aqua;
+}
+
+.main-container {
+  max-width: 450px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(8, 6, 133);
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.todo-list {
+  padding: 20px;
+  box-shadow: 0 10px 40px black;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.list-head {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 20px;
+}
+
+.entered-list {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-size: 16px;
+}
+
+.entered-list:focus {
+  color: red;
+  background-color: rgba(223, 223, 223, 0.359);
+}
+
+.add-list {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(8, 6, 133);
+  color: white;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.tasks {
+  max-width: 400px;
+  /* width: 100%; */
+  margin-top: 20px;
+  overflow: auto;
+  height: 200px;
+}
+
+.item {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(246, 246, 246);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.item p {
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  letter-spacing: 1px;
+}
+
+.item.complated p {
+  text-decoration: line-through;
+  color: black;
+}
+
+.item-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.item i {
+  color: rgb(8, 6, 133);
+  font-size: 18px;
+  cursor: pointer;
+}
